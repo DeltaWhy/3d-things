@@ -7,11 +7,11 @@ hole_fudge_d = 1;
 testfit_d = foot_d + hole_fudge_d + 2;
 base_height = 60;
 curve_r = 5;
-tent_angle = 10;
+tent_angle = 9.5;
 tilt_angle = 0;
 
 module peg() {
-    cylinder(h=hole_d-peg_fudge_d, r=hole_r-peg_fudge_r);
+    cylinder(h=4, r=hole_r-peg_fudge_r);
 }
 module hole() {
     cylinder(h=2*(foot_d+hole_fudge_d), r=foot_r+hole_fudge_r, center=true);
